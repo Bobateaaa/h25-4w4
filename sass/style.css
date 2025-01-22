@@ -63,6 +63,6 @@ h6 {
 }
 
 .hero {
-  background-image: url(../../images/bg__header.jpg);
+  background-image: url("­../../images/bgheader.jpg");
   min-height: 100vh;
 }/*# sourceMappingURL=style.css.map */
