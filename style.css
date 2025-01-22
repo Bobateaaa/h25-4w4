@@ -1,0 +1,31 @@
+/*Fichier principale du la structure SASS________________________________________________*/
+/*Les variables*/
+/*Les regles de base*/
+a {
+  color: #595;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: clamp(1rem, 10vh + 5px, 4rem);
+}
+
+/*Les composants*/
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url(../../images/bg__header.jpg);
+}/*# sourceMappingURL=style.css.map */
