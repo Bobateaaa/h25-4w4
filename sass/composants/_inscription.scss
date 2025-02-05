@@ -1,0 +1,59 @@
+.inscription__contenu {
+    background-color: white;
+    width: 70vw;
+    height: 10vh;
+    padding: 0 1vw 1vh 1vw;
+    display: flex;
+    flex-flow: row nowrap;
+    box-shadow: 1px 1px 4px 1px #00000074;
+}
+
+.inscription__contenu input  {
+    border-color: #34d8db;
+    border-style: solid;
+}
+
+
+.inscription__contenu > * {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    text-align: left;
+}
+
+.inscription__contenu {
+    margin: 0 auto;
+    gap: 1vw;
+}
+
+.inscription__contenu input::placeholder {
+    opacity: 0.5; 
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.inscription__boutton input[type="submit"] {
+    background-color: white;
+}
+
+.inscription__boutton label {
+    opacity: 0;
+    user-select: none;
+}	
+
+.inscription {
+    position: relative;
+    bottom: 2vw;
+}	
+
+@media screen and (max-width: 800px) {
+    .inscription {
+        display: none;
+    }
+
+
+}
