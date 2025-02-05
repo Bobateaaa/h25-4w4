@@ -3,102 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prootype de la page d'accueil</title>
+    <title>Club de voyage</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- header -->
     <header>
-        <div class="entete globale">
-            <div class="entete__logo">
-                <figure>
-                    <img src="https://s2.svgbox.net/materialui.svg?ic=airplanemode_active" widht="25" alt="logo">
-                </figure>
-            </div>
-            <div class="entete__nav">
-                <div class="entete__menu">
-                    <ul class="menu__ul">
-                        <li class="menu__li">
-                        <a href="#">sport</a>
-                        <a href="#">pleine nature</a>
-                        <a href="#">croisière</a>
-                        <a href="#">aventure</a>
-                        <a href="#">culturel</a>
-                        <a href="#">repos</a>
-                        <a href="#">zen</a>
-                        <a href="#">économique</a>
-                        <a href="#">favorite</a>
-                        <a href="#">pays</a>
-                        </li>
+        <div class="entete">
+            <figure class="entete__logo">
+                <img src="images/logo.png" alt="">
+            </figure>
+            <div class="entete__navigation">
+                <input type="checkbox" id="burger-toggle" class="burger-toggle">
+                <label for="burger-toggle" class="burger-menu">
+                    &#9776;
+                </label>
+                <nav class="entete__menu">
+                    <ul class="menu">
+                        <li><a href="#">sport</a></li>
+                        <li><a href="#">pleine nature</a></li>
+                        <li><a href="#">croisière</a></li>
+                        <li><a href="#">aventure</a></li>
+                        <li><a href="#">culturel</a></li>
+                        <li><a href="#">repos</a></li>
+                        <li><a href="#">zen</a></li>
+                        <li><a href="#">économique</a></li>
+                        <li><a href="#">favorite</a></li>
+                        <li><a href="#">pays</a></li>
                     </ul>
-                </div>
-                <div class="entete__recherche">
-                    <input type="search" placeholder="Recherche...">
-                    <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search" width="20" alt="">
-                </div>
-            </div>
+                </nav>
+                <form class="recherche">
+                    <input type="search" placeholder="Rechercher..." class="recherche__input">
+                    <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="16" height="16">
+                </form>
+            </div> 
         </div>
     </header>
- 
+
 
     <section class="hero">
-        <div class="hero__contenu globale">
-            <h1 class="hero__titre">Club de voyage</h1>
+        <div class="hero__contenu global">
+            <h1 class="hero__titre">Voyagez Autrement avec Mondo Voyages !</h1>
             <p class="hero__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam et, commodi quidem dolorum corrupti fugit consequatur perferendis tempora incidunt, hic voluptas? Unde cum mollitia provident atque laborum, ea distinctio odit?
+                Découvrez des destinations uniques et inoubliables avec Mondo Voyages.
+                Nous vous offrons des expériences authentiques, des paysages à couper le
+                souffle et des aventures sur mesure. Partez à la découverte du monde avec
+                nous et créez des souvenirs impérissables.
             </p>
             <p class="hero__courriel">
-                <a href=""></a>
+                <a href="#">info@cmaisonneuve.qc.ca</a>
             </p>
             <p class="hero__adresse">
-                5800 Rue Sherbrooke E, Montreal QC H1X2A2
+                5800 Sherbrooke-est - Montréal (Québec) H1X 2A2
             </p>
+            <p class="hero__telephone">
+                514-254-7131
+            </p>
+            <button class="hero__inscrire">
+                S'INSCRIRE
+            </button>
             <div class="hero__icone">
-                <img src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=000" width="32" height="32">
-                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000" width="32" height="32">
+                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=snapchat&color=000000" width="20" height="20">
             </div>
         </div>
     </section>
 
+    <section class="inscription">
+        <form class="inscription__contenu">
+            <div class="inscription__nom">
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" name="lname" placeholder="Écrivez votre nom">
+            </div>
+            <div class="inscription__prenom">
+                <label for="fname">Prénom</label>
+                <input type="text" id="fname" name="fname" placeholder="Écrivez votre prénom">
+            </div>
+            <div class="inscription__courriel">
+                <label for="email">Courriel</label>
+                <input type="email" id="email" name="email" placeholder="Écrivez votre courriel">
+            </div>
+            <div class="inscription__telephone">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Écrivez votre téléphone">
+            </div>
+            <div class="inscription__boutton">
+                <label for="submit">s'inscrire</label>
+                <input type="submit" id="submit" name="submit" value="S'INSCRIRE">
+            </div>
+        </form>
+    </section>
+
+    
     <main>
-        <div class="galerie globale">
+        <h4 class="galerie__titre">Nos destination favorites</h4>
+        <div class="galerie">
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/bangkok.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/barcelona.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/berlin.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/brisbane.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/glasgow.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/glasgow.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/machupichu.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/montreal.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/singapore.jpg" alt="" class="galerie__img">
             </figure>
             <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
+                <img src="images/shanghai.jpg" alt="" class="galerie__img">
             </figure>
         </div>
     </main>
     <footer></footer>
-    
 </body>
 </html>

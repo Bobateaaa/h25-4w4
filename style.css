@@ -18,7 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*Les variables*/
 /*Les regles de base*/
 a {
-  color: #595;
+  color: rgb(26, 26, 26);
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(1rem, 3vw, 5rem);
+  font-size: clamp(2rem, 3vw, 5rem);
 }
 
 h2 {
@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2.3vw, 2rem);
 }
 
 h4 {
@@ -43,18 +43,257 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(0.9rem, 1.7vw, 1.2rem);
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
 }
 
 h6 {
-  font-size: clamp(0.8rem, 1.7vw, 5rem);
+  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 1.7vw, 1rem);
 }
 
 /*Les composants*/
+.recherche {
+  display: flex;
+  height: 1.6rem;
+  width: 14rem;
+}
+.recherche__input {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  flex: 1 0 auto;
+  padding: 3px;
+}
+.recherche__input:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.recherche__input::placeholder {
+  color: rgba(0, 0, 0, 0.724);
+  font-style: italic;
+}
+.recherche__img {
+  flex: 0 0 20px;
+  padding: 3px;
+}
+
+.entete form {
+  border: 1px solid rgba(0, 0, 0, 0.78);
+}
+
+@media screen and (max-width: 800px) {
+  .recherche {
+    display: none;
+  }
+}
+.inscription__contenu {
+  background-color: white;
+  width: 70vw;
+  height: 10vh;
+  padding: 0 1vw 1vh 1vw;
+  display: flex;
+  flex-flow: row nowrap;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4549019608);
+}
+
+.inscription__contenu input {
+  border-color: #34d8db;
+  border-style: solid;
+}
+
+.inscription__contenu > * {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  text-align: left;
+}
+
+.inscription__contenu {
+  margin: 0 auto;
+  gap: 1vw;
+}
+
+.inscription__contenu input::placeholder {
+  opacity: 0.5;
+  font-size: 13px;
+  margin-left: 3px;
+}
+
+.inscription__boutton input[type=submit] {
+  background-color: white;
+}
+
+.inscription__boutton label {
+  opacity: 0;
+  user-select: none;
+}
+
+.inscription {
+  position: relative;
+  bottom: 2vw;
+}
+
+@media screen and (max-width: 800px) {
+  .inscription {
+    display: none;
+  }
+}
+/* ----------------------------------------- .menu */
+.menu {
+  display: flex;
+  gap: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+ul {
+  flex-direction: row;
+  list-style-type: none;
+}
+
 /*Le layout*/
 .entete {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.entete__navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.entete__logo img {
+  width: 75px;
+}
+
+ul.menu {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .entete {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    width: 97vw;
+  }
+  .entete__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .entete__logo img {
+    width: 75px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  ul.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .burger-toggle:checked ~ .entete__menu .menu {
+    display: flex;
+  }
+  .burger-menu {
+    display: block;
+    position: fixed;
+    font-size: 30px;
+    top: 30px;
+    right: 6vw;
+    grid-column: 2/3;
+  }
+  .entete__logo {
+    position: fixed;
+    top: 5px;
+    grid-column: 1/2;
+  }
+  .entete__logo img {
+    width: 60px;
+  }
+  nav {
+    grid-column: 3/5;
+    width: 85vw;
+    padding-top: 90px;
+  }
+  nav ul {
+    display: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.global {
+  padding: 10vh 5vw;
+}
+
+.galerie__figure img {
+  width: 17vw;
+  height: 220px;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+figure.galerie__figure {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.galerie.global {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.galerie {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.galerie__titre {
+  margin-left: 5.5vw;
+}
+
+main {
+  padding-bottom: 10px;
 }
 
 .globale {
@@ -64,5 +303,56 @@ h6 {
 
 .hero {
   background-image: url("­../../images/bgheader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
+}
+.hero__icone {
+  margin-top: 19px;
+}
+.hero__titre {
+  text-shadow: 2px 3px 5px rgba(24, 145, 172, 0.764);
+}
+
+.hero p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hero__description {
+  width: 43%;
+}
+
+.hero__inscrire {
+  background-color: #6fd2d2;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.hero__inscrire:hover {
+  background-color: #2fafc2;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    min-height: 50vh;
+    padding: 10px;
+  }
+  .hero__titre {
+    font-size: 2rem;
+  }
+  .hero__description {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  .hero__telephone {
+    font-size: 0.7rem;
+  }
+  .hero__courriel {
+    color: black !important;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+.global{
+    padding: 10vh 5vw;
+    
+}
+
+.galerie__figure img{
+    width: 17vw;
+    height: 220px;
+    padding: 0;
+    margin: 0;
+    object-fit: cover
+}
+
+figure.galerie__figure {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.galerie.global {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.galerie {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}	
+
+.galerie__titre {
+    margin-left: 5.5vw;
+}
+
+main {
+    padding-bottom: 10px;
+}
+

@@ -1,4 +1,108 @@
 .entete {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__logo img {
+        width: 75px;
+    }
+}
+
+ul.menu {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .entete {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aliceblue;
+        width: 97vw;
+
+        &__navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__logo img {
+            width: 75px;
+        }
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    ul.menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .burger-toggle:checked ~ .entete__menu .menu {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+        position: fixed;
+        font-size: 30px;
+        top: 30px;
+        right: 6vw;
+        grid-column: 2 / 3;
+    }
+
+    .entete__logo {
+        position: fixed;
+        top: 5px;
+        grid-column: 1 / 2;
+
+        img {
+            width: 60px;
+        }
+    }
+    
+
+    nav {
+        grid-column: 3/5;
+        width: 85vw;
+        padding-top: 90px;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
