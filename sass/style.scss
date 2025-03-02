@@ -1,38 +1,42 @@
 /*
-Theme Name: TP1 Matilda Kang
+Theme Name: TP1 Eddy Martin
 Theme URI: https://referenced.ca
-Author: Matilda Kang
-Author URI: https://github.com/Bobateaaa/h25-4w4
-Description: Theme developpé dans le cadre du cours 4w4
+Author: Eddy Martin
+Author URI: https://github.com/eddytuto
+Description: Thème développé dans le cadre du cours 4w4
 Version: 1.0
 Requires at least: 6.0
-Tested up to: 5.9
+Tested up to: 5.3
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: tp1-mk
+Text Domain: tp1-em
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/*Les variables*/
+/* /////////////////////////////////
+Les variables
+//////////////////////////////////// */
 @import "variables/couleurs";
 
-
-/*Les regles de base*/
-@import "base/liens";
+/* /////////////////////////////////
+Les balise de bases
+//////////////////////////////////// */
 @import "base/simple";
 
-/*Les composants*/
-@import "composants/pied-de-page";
-@import "composants/zone-recherche";
-@import "composants/inscription";
+/* /////////////////////////////////
+Les composants
+//////////////////////////////////// */
 @import "composants/menu";
+@import "composants/recherche";
+@import "composants/carte";
 
-/*Le layout*/
+/* /////////////////////////////////
+Les layouts
+//////////////////////////////////// */
+@import "layout/general";
 @import "layout/entete";
 @import "layout/galerie";
-@import "layout/general";
 @import "layout/hero";
-
-
+@import "layout/footer";

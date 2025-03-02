@@ -1,7 +1,9 @@
-# Exercice #1
-## Concevoir une page d'accueil web en HTML/CSS a partir d'une maquette
-### Auteur : Matilda Kang
+# TP1
 
-La réalisation de ce prototype représente une premiere étape pour la conception d'un theme wordpress.
+## Concevoir un site Wordpress pour un club de voyage
 
-#### Github-pages : https://github.com/Bobateaaa/h25-4w4
+### Auteur: Eddy Martin
+
+La réalisation de ce thème permettra d'optimiser la présentation d'un contenu spécifique sur différentes destination de voyages.
+
+#### Site en ligne sur WHC:
