@@ -1,18 +1,17 @@
 /* ----------------------------------------- .menu */
 .menu{ // ul
     display : flex;
-    gap : 10px 0;
-}
-
-.menu a {
-    text-decoration : none;
-    padding : 7px;
-    font-size: 16px;
-    font-weight: 300;
-}		
-
-ul {
+    @media screen and (max-width: 800px) {
+    flex-direction: column;
+    }
     flex-direction: row;
     list-style-type: none;
+    gap : 10px 0;
+    &-item{ // li
+ 
+       a { //a
+        text-decoration : none;
+        padding : 4px;
+       } 
+    }
 }
-
