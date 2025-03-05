@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme Name: TP1 Matilda Kang
+Theme Name: TP1 Eddy Martin
 Theme URI: https://referenced.ca
-Author: Matilda Kang
-Author URI: https://github.com/Bobateaaa/h25-4w4/tree/tp1
+Author: Eddy Martin
+Author URI: https://github.com/eddytuto
 Description: Thème développé dans le cadre du cours 4w4
 Version: 1.0
 Requires at least: 6.0
@@ -119,6 +119,11 @@ Les layouts
 .global {
   max-width: 1100px;
   padding: 10vh 5vw;
+}
+
+.populaire .global {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .entete {
