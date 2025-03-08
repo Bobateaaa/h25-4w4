@@ -4,9 +4,6 @@
  */
 ?>
 <article class="carte carte--grande">
-  <figure class="carte__image">
-    <img src="voyage.jpg" alt="Image de voyage">
-    </figure>
   <div class="carte__contenu">
     <?php
         if (has_post_thumbnail()) {

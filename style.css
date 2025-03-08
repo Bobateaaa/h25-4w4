@@ -103,9 +103,11 @@ Les composants
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 .carte--grande {
   flex: 1 1 250px;
+  margin: 10px;
 }
 .carte__image img {
   width: 100%;
@@ -117,7 +119,7 @@ Les composants
 Les layouts
 //////////////////////////////////// */
 .global {
-  max-width: 1100px;
+  max-width: 1600px;
   padding: 10vh 5vw;
 }
 
@@ -126,11 +128,17 @@ Les layouts
   flex-wrap: wrap;
 }
 
+section.populaire {
+  display: flex;
+  justify-content: center;
+}
+
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .entete__navigation {
   width: auto;
   position: static;
@@ -139,6 +147,13 @@ Les layouts
   display: flex;
   align-items: center;
 }
+
+.entete__logo {
+  width: 200px;
+  height: auto;
+}
+
+
 @media screen and (max-width: 800px) {
   .entete__navigation {
     position: absolute;
@@ -152,9 +167,10 @@ Les layouts
 }
 
 .hero {
-  background-image: url("images/maldives.jpg");
-  background-repeat: no-repeat;
-  min-height: 100vh;
+    background-image: url(images/maldives.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-image: no-repeat;
 }
 
 /*
@@ -163,6 +179,8 @@ Les layouts
 footer {
   background-color: rgb(236, 136, 13);
   color: #000;
+  display: flex;
+  justify-content: center;
 }
 
 .piedpage {

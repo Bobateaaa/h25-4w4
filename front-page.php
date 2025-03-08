@@ -5,8 +5,14 @@
             <p class="hero__description">
             <?php bloginfo('description'); ?>
             </p>
+            <p class="hero__auteur">
+                Matilda Kang
+            </p>
             <p class="hero__courriel">
             <?php bloginfo('admin_email'); ?>
+            </p>
+            <p class="hero__telephone">
+                (514)-254-7131 poste 4599
             </p>
             <p class="hero__adresse">
                 5800 Sherbrooke-est - Montréal (Québec) H1X 2A2

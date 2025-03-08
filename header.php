@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club de voyage</title>
+    <title>Wandering - Club de voyage</title>
     <!-- link rel="stylesheet" href="normalize.css" -->
     <!-- link rel="stylesheet" href="style.css" -->
     <?php wp_head() ?>
@@ -24,8 +24,9 @@
                     'container' => 'nav',
                     'container_class' => 'entete__menu'
                 )); ?>
-                <?php get_search_form() ?>
-
             </div> <!-- fin entete__navigation  -->
+            <div class="entete__recherche">
+                <?php get_search_form() ?>
+            </div>
         </div>
     </header>
