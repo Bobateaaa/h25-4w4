@@ -138,6 +138,7 @@ section.populaire {
   justify-content: space-between;
   align-items: center;
 }
+
 .entete__navigation {
   width: auto;
   position: static;
@@ -146,6 +147,13 @@ section.populaire {
   display: flex;
   align-items: center;
 }
+
+.entete__logo {
+  width: 200px;
+  height: auto;
+}
+
+
 @media screen and (max-width: 800px) {
   .entete__navigation {
     position: absolute;

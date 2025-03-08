@@ -1,28 +1,36 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+div.entete {
+    position: fixed;
+    z-index: 1;
+}
+
 .entete{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     &__navigation {
         @media screen and (max-width: 800px) {
             position : absolute;
             top:0;
             right:0;
-            background-color: #fff;
             padding : 20px;
             flex-direction: column; 
             width : 100vw;
+            margin-right: 40px;
         }
-        width : auto;
+    &__logo{
+        width: 200px;
+        height: auto;
+    }
+        width: 90vw;
         position : static;
         flex-direction: row; 
         background-color: transparent;
-
-
-
-
         display: flex;
-        
-        align-items: center;
-                                                                   
+        align-items: center;                                                       
     }
 }
