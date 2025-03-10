@@ -12,5 +12,18 @@
         justify-content: center;
         align-items: center;
     }
+
+    &__description{
+        margin: 0px auto;
+        bottom: 30px;
+        position: relative;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        color: #0f6467;
+        background-color: #a1dbdd;
+        padding: 10px 150px;
+        border-radius: 50px;
+    }
 }
 

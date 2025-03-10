@@ -1,31 +1,45 @@
-.recherche{
-    display:flex;
+.recherche {
+    display: flex;
+    align-items: center;
     height: 1.6rem;
-    width : 14rem;
-    border: 1px solid  rgba(0, 0, 0, 0.1);
+    width: 14rem; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    transition: border-bottom-color 0.3s ease;
 
-// le & prend la valeur du sélecteur parent 
-    &__input{
-        border : none;
+    &__input {
+        border: none;
         outline: none;
-        background-color: rgba(0,0,0, .01);
-        flex : 1 0 auto;
-        padding : 3px;
-        &:hover{
-            background-color: rgba(0,0,0, .05); 
-        }
-        &::placeholder{
-            color: rgba(0,0,0, .2);
-            font-style : italic;
+        background-color: transparent; 
+        flex: 1 0 auto;
+        padding: 3px;
+        width: 100%; 
+        opacity: 1; 
+        color: black; 
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: transparent; 
         }
 
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.2);
+            font-style: italic;
+        }
     }
-    
-    &__img{
-        flex: 0 0 20px; 
-        padding : 3px;
 
+    &__bouton {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
 
-
+    &__img {
+        flex: 0 0 20px;
+        padding: 3px;
+        cursor: pointer;
+        background-color: transparent; 
+        width: 20px;
+        height: 20px;
     }
 }
